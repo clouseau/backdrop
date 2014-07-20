@@ -27,6 +27,7 @@ function user_admin($callback_arg = '') {
     case t('Create new account'):
     case 'create':
       exit;
+      
       $build['user_register'] = backdrop_get_form('user_register_form');
       break;
     default:
