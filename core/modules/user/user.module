@@ -1488,10 +1488,12 @@ function user_menu() {
 
   $items['admin/people/create'] = array(
     'title' => 'Add user',
-    'page arguments' => array('create'),
+    'page callback' => 'backdrop_get_form',
+    'page arguments' => array('user_register_form'),
     'access arguments' => array('administer users'),
     'type' => MENU_LOCAL_ACTION,
   );
+  
 
   // Administration pages.
   $items['admin/config/people'] = array(
